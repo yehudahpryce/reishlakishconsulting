@@ -1,25 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page not found | Reish Lakish Consulting</title>
-<meta name="robots" content="noindex">
-<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600&family=Frank+Ruhl+Libre:wght@500&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#070b1a;--ink:#f3efe4;--soft:#c7cbda;--accent:#d8b25a;color-scheme:dark}
-body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--ink);font-family:"Assistant",system-ui,sans-serif;font-size:1.1rem;padding:24px;box-sizing:border-box}
-main{max-width:30rem}
-h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:clamp(2rem,8vw,3rem);line-height:1.1;margin:0 0 14px}
-p{color:var(--soft);line-height:1.6;margin:0 0 22px}
-a{display:inline-block;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:600;padding:12px 20px;border-radius:999px}
-</style>
+<meta name="description" content="Page not found.">
+<link rel="canonical" href="https://www.reishlakishconsulting.com/404">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a1220'/%3E%3Cpath d='M16 5l9.5 5.5v11L16 27l-9.5-5.5v-11z' fill='none' stroke='%23d4af37' stroke-width='1.8'/%3E%3Cpath d='M16 5v22M6.5 10.5L25.5 21.5M25.5 10.5L6.5 21.5' stroke='%23d4af37' stroke-width='.8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
 </head>
-<body>
+<body class="inner">
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="./">Reish Lakish <span class="gold">Consulting</span></a>
+    <nav class="nav" id="nav" aria-label="Site"><a href="./">Home</a><a href="about-us">About Us</a><details class="sub-nav"><summary>Consulting Services</summary><div class="sub-menu"><a href="individual-wellness-consultations">Individual Wellness Consultations</a><a href="featured-speakers">Featured Speakers</a><a href="custom-services">Custom Services</a></div></details><a href="#contact">Contact</a></nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+</header>
 <main>
-  <h1>That page isn't here.</h1>
-  <p>The address may have changed. The home page has our services, our founder, and how to get in touch.</p>
-  <a href="/">Go to the home page</a>
+<section class="page-head"><div class="narrow"><h1>Page not found</h1><div class="rule"></div><p class="lede">That page isn&rsquo;t here.</p><p><a class="btn btn-gold" href="/">Back to home</a></p></div></section><div style="height:120px"></div>
 </main>
+<footer class="site-foot" id="contact">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="kicker">Contact</p>
+      <h2>Reish Lakish Consulting</h2>
+      <address>5319 University Dr., Suite 613<br>Irvine, CA 92612<br><br>
+      <a href="mailto:info@reishlakishconsulting.com">info@reishlakishconsulting.com</a><br>
+      Tel: <a href="tel:+19498445130">(949) 844-5130</a></address>
+    </div>
+    <div>
+      <p class="kicker">Hours</p>
+      <dl class="hours"><dt>Mon &ndash; Th</dt><dd>7am &ndash; 10pm</dd><dt>Fri</dt><dd>7am &ndash; 2pm</dd><dt>Sunday</dt><dd>10am &ndash; 11pm</dd></dl>
+    </div>
+    <form id="contactForm" action="mailto:info@reishlakishconsulting.com" method="post" enctype="text/plain">
+      <label class="f">Name<input type="text" name="name" autocomplete="name" required></label>
+      <label class="f">Email<input type="email" name="email" autocomplete="email" required></label>
+      <label class="f full">Subject<input type="text" name="subject"></label>
+      <label class="f full">Message<textarea name="message" required></textarea></label>
+      <label class="consent full"><input type="checkbox" name="consent" required><span>By providing your phone number or email address, you agree to receive text message or email communications back from Reish Lakish Consulting LLC</span></label>
+      <div class="full"><button class="btn btn-gold" type="submit">Submit</button></div>
+      <p class="form-note full" id="formNote" hidden>Thanks! Your email app should now open with your message ready to send.</p>
+    </form>
+  </div>
+  <div class="copy">&copy; 2026 by Reish Lakish Consulting LLC</div>
+</footer>
+<script src="site.js"></script>
 </body>
 </html>
