@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.reishlakishconsulting.com/sitemap.xml
